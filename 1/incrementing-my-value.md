@@ -40,7 +40,7 @@ Here we have written two kinds of functions which modify a HashMap. One which si
 
 ## Feel the Pain (Optional)
 
-We will not always have an existing value on our contract's storage. We can take advantage of the Rust `Option<T>` type to help use on this task.
+We will not always have an existing value on our contract's storage. We can take advantage of the Rust `Option<T>` type to help us on this task.
 If there's no value on the contract storage we will insert a new one; on the contrary if there is an existing value we will only update it.
 
 ink! HashMaps expose the well-known `entry` API that we can use to achieve this type of "upsert" behavior:
